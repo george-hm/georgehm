@@ -1,0 +1,92 @@
+body {
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a:link {
+    text-decoration: none;
+    color: #12c2a8;
+}
+
+a:hover {
+    color: #1aedcd;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #e1a442;
+    text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #12c2a8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.github {
+    background-color: #161b22;
+    transition: .125s ease-out
+}
+
+.github:hover {
+    background-color: #2f3846;
+    transition: .125s ease-in
+}
+
+.twitter {
+    background-color: #1d9bf0;
+    transition: .125s ease-out
+}
+
+.twitter:hover {
+    background-color: #10b3ff;
+    transition: .125s ease-in
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-basis: auto;
+}
+
+.container-center {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-basis: auto;
+}
+
+.img-main {
+    max-height: 400px;
+}
+
+.flex-row-description {
+    margin-left: 20px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        flex-flow: column wrap;
+    }
+    .flex-row-description {
+        margin: auto;
+    }
+}

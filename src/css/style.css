@@ -80,14 +80,36 @@ ul li::before {
     margin-left: 20px;
 }
 
+.divider {
+    margin-top: 20px;
+    border-color: grey;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
 /* Small screens */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     .container {
         flex-direction: column;
         flex-flow: column wrap;
     }
-    .flex-row-description {
-        margin: auto;
+    .img-main {
+        max-height: 300px;
+        max-width: 300px;
+        padding-left: 8%;
+        order: 2;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+    .footer a {
         font-size: 20px;
     }
+    .footer img {
+        height: 30px;
+        width: auto;
+    }
+
 }

@@ -81,12 +81,13 @@ ul li::before {
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
         flex-flow: column wrap;
     }
     .flex-row-description {
         margin: auto;
+        font-size: 20px;
     }
 }

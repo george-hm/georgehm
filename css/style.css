@@ -1,14 +1,17 @@
 body {
     background: #2c3e50;
     color: white;
-    font-size: 16px;
-    margin: 2em auto;
-    max-width: 800px;
-    padding: 1em;
-    line-height: 1.4;
-    text-align: justify;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-size: 36px;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    min-height: 100vh;
+    text-align: center;
 }
+
 
 a:link {
     text-decoration: none;
@@ -20,80 +23,30 @@ a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: #e1a442;
-    text-decoration: underline;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li::before {
-  content: "\2022";
-  color: #12c2a8;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.github {
-    background-color: #161b22;
-    transition: .125s ease-out
-}
-
-.github:hover {
-    background-color: #2f3846;
-    transition: .125s ease-in
-}
-
-.twitter {
-    background-color: #1d9bf0;
-    transition: .125s ease-out
-}
-
-.twitter:hover {
-    background-color: #10b3ff;
-    transition: .125s ease-in
-}
-
-.container {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    flex-basis: auto;
-}
-
-.container-center {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    flex-basis: auto;
-}
-
-.img-main {
-    max-height: 400px;
-}
-
-.flex-row-description {
-    margin-left: 20px;
-}
-
 .divider {
+    width: 100%;
     margin-top: 20px;
     border-color: grey;
 }
 
 .footer {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer img {
+    filter: invert(1);
+    height: 40px;
 }
 
 /* Small screens */
 @media only screen and (max-width: 800px) {
-    .container {
-        flex-direction: column;
-        flex-flow: column wrap;
+    body {
+        font-size: 14px;
+        justify-content: center;
     }
     .img-main {
         max-height: 300px;

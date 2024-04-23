@@ -10,6 +10,7 @@ body {
     color: #fff;
     min-height: 100vh;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -21,6 +22,11 @@ a:link {
 a:hover {
     color: #1aedcd;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #1aedcd;
+    text-decoration: none;
 }
 
 .divider {
